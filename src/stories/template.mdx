@@ -1,0 +1,64 @@
+import { Meta } from "@storybook/blocks";
+
+import UseThis from './assets/use-this-template-button.png';
+import CreateRepoName from './assets/create-repository-name.png';
+import UrlToRepo from './assets/url-to-your-repo.png';
+
+
+
+<Meta title="Материалы/ Начни здесь" />
+
+<div className="sb-container">
+  <div className='sb-section-title'>
+    # Шаблон Проекта
+
+    #### Привет! Это шаблон стартового проекта который будет базой для разработки компонентов и документации <br/> в рамках моего курса "Архитектор Дизайн Систем".
+
+    <hr/>
+
+    ### Краткая инструкция по установке шаблона
+    * В адресной строке введите этот url <a>https://github.com/ArthurIvanov/ds-architect</a>
+    * Над списком файлов нажмите Использовать этот шаблон "Use this template"
+    <img className="sb-img" src={UseThis} alt="Use this repo"/>
+    * В выпадающем списке выберите "Create a new repository"
+    * В появившемся поле введите название вашего репозитория. Как пример - my-ds-arch-project
+    <img className="sb-img" src={CreateRepoName} alt="Create repo name"/>
+    * После того как ваш репозиторий будет успешно создан, вы можете клонировать его на ваш компьютер (ноутбук)
+    <img className="sb-img" src={UrlToRepo} alt="url to repo"/>
+    * Сначала выберите папку в которую вы хотите клонировать ваш репозиторий. К примеру можно сохранить на рабочий стол. В терминале введите ```cd Desktop ```
+    * Затем введите ```git clone "url вашего репозитория, вводите без кавычек"```
+    * После того как репозиторий был скачен, перейдите в его папку в терминале ```cd your-project-name``` и выполните команду ``` npm install``` она установит все необходимые зависимости для начала работы с проектом
+
+
+  </div>
+  
+</div>
+
+<style>
+  {`
+    .sb-img {
+        width: 60%;
+    }
+
+    .sb-container {
+        margin-bottom: 48px;
+        max-width: 900px;
+  }
+
+    .sb-section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #F7F8F9 solid;
+    box-shadow: 0px 2px 24px 0px rgba(34, 49, 69, 0.08);
+  }
+
+  `}
+</style>
