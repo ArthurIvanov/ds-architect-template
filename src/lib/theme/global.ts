@@ -1,36 +1,37 @@
-import { css, createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import FiraSansReg from "../fonts/FiraSans-Regular.ttf";
+import FiraSansIt from "../fonts/FiraSans-Italic.ttf";
 
-export const bodyStyles = css`
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-overflow-scrolling: touch;
+export const GlobalStyle = createGlobalStyle`
 
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-		margin: 0;
-		padding: 0;
+	@font-face {
+		font-family: 'Fira Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: url(${FiraSansReg}) format('truetype');
 	}
-`;
-export const GlobalStyle = createGlobalStyle<any>`
+
+	@font-face {
+		font-family: 'Fira Sans Italic';
+		font-style: italic;
+		font-weight: 400;
+		src: url(${FiraSansIt}) format('truetype');
+	}
+	
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
 	body {
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: normal;
-            font-weight: 400;
-            src: url('assets/fonts/FiraSans-Regular.ttf') format('truetype');
-        }
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+            -webkit-overflow-scrolling: touch;
 
-        @font-face {
-            font-family: 'Fira Sans';
-            font-style: italic;
-            font-weight: 400;
-            src: url('assets/fonts/FiraSans-Regular.ttf') format('truetype');
-        }
-
-		font-family: 'Fira Sans', sans-serif;
-
-		${bodyStyles}
+            font-family: 'Fira Sans', sans-serif;
+            background: #ddff;
 	}
 `;
