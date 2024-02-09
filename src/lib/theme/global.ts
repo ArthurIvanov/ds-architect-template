@@ -1,23 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-import FiraSansReg from "../fonts/FiraSans-Regular.ttf";
-import FiraSansIt from "../fonts/FiraSans-Italic.ttf";
 
 export const GlobalStyle = createGlobalStyle`
 
-	@font-face {
-		font-family: 'Fira Sans';
-		font-style: normal;
-		font-weight: 400;
-		src: url(${FiraSansReg}) format('truetype');
-	}
-
-	@font-face {
-		font-family: 'Fira Sans Italic';
-		font-style: italic;
-		font-weight: 400;
-		src: url(${FiraSansIt}) format('truetype');
-	}
-	
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
@@ -31,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
             -webkit-tap-highlight-color: transparent;
             -webkit-overflow-scrolling: touch;
 
-            font-family: 'Fira Sans', sans-serif;
-            background: #ddff;
+            font-family: sans-serif;
+            background: white;
 	}
 `;

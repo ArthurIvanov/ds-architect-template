@@ -51,7 +51,7 @@ const List = styled.ul`
 `;
 
 export default {
-    title: 'DS Architect/Icon',
+    title: 'Компоненты/Icon',
     component: Icon,
     parameters: {
         status: {
@@ -83,12 +83,12 @@ export const withNames = {
 export const InlinePlacement = {
     render: (args) => (
         <>
-            this is an inline <Icon {...args} /> icon (default prop value)
+            this is an inline <Icon {...args} /> icon (default)
         </>
     ),
     args: {
         iconName: 'user',
-        'aria-label': 'Happy face',
+        'aria-label': 'user',
         size: 24
     },
 };

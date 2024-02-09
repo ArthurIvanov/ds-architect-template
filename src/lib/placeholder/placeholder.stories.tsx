@@ -1,7 +1,7 @@
 import { Placeholder } from "./placeholder";
 
 export default {
-	title: "DS Architect/Placeholder",
+	title: "Компоненты/Placeholder",
 	component: Placeholder,
 	parameters: {
 		layout: "centered",
