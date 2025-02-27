@@ -74,19 +74,19 @@ export const lightTheme = {
 
 	typography: {
 		family: {
-			base: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';`,
-			heading: `-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';`,
-			monospace: `'SFMono-Medium', 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', 'Ubuntu Mono', Menlo, Consolas, Courier, monospace`,
+			base: typography.fontFamily.base,
+			heading: typography.fontFamily.heading,
+			monospace: typography.fontFamily.monospace,
 		},
 		fontSize: {
-			h1: typography.size.h1,
-			h2: typography.size.h2,
-			h3: typography.size.h3,
-			h4: typography.size.h4,
-			h5: typography.size.h5,
-			h6: typography.size.h6,
-			base: typography.size.base,
-			small: typography.size.small,
+			h1: typography.fontSize.h1,
+			h2: typography.fontSize.h2,
+			h3: typography.fontSize.h3,
+			h4: typography.fontSize.h4,
+			h5: typography.fontSize.h5,
+			h6: typography.fontSize.h6,
+			base: typography.fontSize.base,
+			small: typography.fontSize.small,
 		},
 
 		lineHeight: {

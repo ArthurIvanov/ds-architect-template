@@ -6,7 +6,7 @@ export const zIndices = {
 	surfaceDragged: 30,
 	overlayContent: 40,
 	overlayTooltip: 50,
-	overlayDrawer: 60,
+	overlaySidebar: 60,
 	overlayModal: 70,
 	overlayNotification: 100,
 };
