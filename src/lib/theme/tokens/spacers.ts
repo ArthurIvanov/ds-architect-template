@@ -1,4 +1,4 @@
-export const spacing = {
+export const spacers = {
 	1: "1px",
 	2: "2px",
 	3: "3px",
@@ -11,6 +11,7 @@ export const spacing = {
 	11: "11px",
 	12: "12px",
 	15: "15px",
+	14: "14px",
 	16: "16px",
 	18: "16px",
 	20: "20px",

@@ -1,4 +1,4 @@
 export * from "./colors";
-export * from "./spacing";
+export * from "./spacers";
 export * from "./typography";
 export * from "./z-index";

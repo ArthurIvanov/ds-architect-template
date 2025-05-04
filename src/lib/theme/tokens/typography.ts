@@ -1,3 +1,5 @@
+import { spacers } from "./spacers";
+
 export const typography = {
 	fontFamily: {
 		base: `"Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'`,
@@ -6,27 +8,27 @@ export const typography = {
 	},
 
 	fontSize: {
-		h1: "56px",
-		h2: "40px",
-		h3: "32px",
-		h4: "24px",
-		h5: "18px",
-		h6: "16px",
-		base: "16px",
-		small: "14px",
-		caption: "12px",
+		h1: spacers[56],
+		h2: spacers[40],
+		h3: spacers[32],
+		h4: spacers[24],
+		h5: spacers[18],
+		h6: spacers[16],
+		base: spacers[16],
+		small: spacers[14],
+		caption: spacers[12],
 	},
 
 	lineHeight: {
-		h1: "64px",
-		h2: "40px",
-		h3: "32px",
-		h4: "24px",
-		h5: "24px",
-		h6: "24px",
-		base: "24px",
-		small: "20px",
-		caption: "16px",
+		h1: spacers[64],
+		h2: spacers[40],
+		h3: spacers[32],
+		h4: spacers[24],
+		h5: spacers[24],
+		h6: spacers[24],
+		base: spacers[24],
+		small: spacers[20],
+		caption: spacers[16],
 	},
 
 	fontWeight: {
