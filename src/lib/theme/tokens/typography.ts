@@ -8,7 +8,7 @@ export const typography = {
 	},
 
 	fontSize: {
-		h1: spacers[56],
+		h1: spacers[48],
 		h2: spacers[40],
 		h3: spacers[32],
 		h4: spacers[24],
@@ -16,11 +16,11 @@ export const typography = {
 		h6: spacers[16],
 		base: spacers[16],
 		small: spacers[14],
-		caption: spacers[12],
+		extraSmall: spacers[12],
 	},
 
 	lineHeight: {
-		h1: spacers[64],
+		h1: spacers[56],
 		h2: spacers[40],
 		h3: spacers[32],
 		h4: spacers[24],
@@ -28,7 +28,7 @@ export const typography = {
 		h6: spacers[24],
 		base: spacers[24],
 		small: spacers[20],
-		caption: spacers[16],
+		extraSmall: spacers[16],
 	},
 
 	fontWeight: {
