@@ -26,4 +26,5 @@ export const spacers = {
 	56: "56px",
 	64: "64px",
 	72: "72px",
+	98: "98px"
 };
