@@ -13,15 +13,6 @@ const preview: Preview = {
 				date: /Date$/i,
 			},
 		},
-		status: {
-			statuses: {
-				released: {
-					background: "#0000ff",
-					color: "#ffffff",
-					description: "This component is stable and released",
-				},
-			},
-		},
 	},
 	globalTypes: {
 		theme: {
