@@ -1,4 +1,4 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyle } from "../src/lib";
@@ -38,7 +38,7 @@ const preview: Preview = {
 export default preview;
 
 export const decorators = [
-	(Story, context) => {
+	(Story, context: { globals: { theme?: string } }) => {
 		const theme = context.globals.theme === "dark" ? darkTheme : lightTheme;
 		return (
 			<ThemeProvider theme={theme}>

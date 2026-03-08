@@ -1,24 +1,27 @@
+// This file has been automatically migrated to valid ESM format by Storybook.
 import type { StorybookConfig } from "@storybook/react-vite";
-import path from "node:path";
+import path, { dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const config: StorybookConfig = {
-	stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
-	addons: [
+    stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
+    addons: [
 		"@storybook/addon-onboarding",
 		"@storybook/addon-docs",
 		"@storybook/addon-themes",
 	],
-	framework: {
+
+    framework: {
 		name: "@storybook/react-vite",
 		options: {},
 	},
-	docs: {
-		autodocs: "tag",
-	},
-	viteFinal: (config) => {
+
+    viteFinal: (config) => {
 		// Storybook 10: пакет @storybook/blocks удалён, блоки экспортируются из addon-docs
 		config.resolve = config.resolve || {};
 		config.resolve.alias = {
@@ -62,6 +65,6 @@ const config: StorybookConfig = {
 			},
 		});
 		return config;
-	},
+	}
 };
 export default config;
