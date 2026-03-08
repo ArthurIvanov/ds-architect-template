@@ -1,4 +1,5 @@
 export const spacers = {
+	none: "0px",
 	1: "1px",
 	2: "2px",
 	3: "3px",
