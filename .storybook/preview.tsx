@@ -38,7 +38,7 @@ const preview: Preview = {
 export default preview;
 
 export const decorators = [
-	(Story, context: { globals: { theme?: string } }) => {
+	(Story: React.ComponentType, context: { globals: { theme?: string } }) => {
 		const theme = context.globals.theme === "dark" ? darkTheme : lightTheme;
 		return (
 			<ThemeProvider theme={theme}>
