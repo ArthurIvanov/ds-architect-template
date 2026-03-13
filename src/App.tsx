@@ -3,10 +3,10 @@ import { GlobalStyle } from "./lib/theme";
 import { Placeholder } from "./lib/placeholder";
 
 function App() {
-	const switcher = false;
+	const switcher = true;
 	return (
 		<>
-			<GlobalStyle />
+			
 			<main>
 				<Placeholder text="Привет мир!" />
 			</main>
