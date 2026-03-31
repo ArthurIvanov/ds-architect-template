@@ -9,7 +9,8 @@ interface IBadgeProps {
 	text?: string;
 }
 
-const StyledDiv = styled.div<IBadgeProps>`
+// Больше рекомендация, обычно называют именем компонента а нет тега
+const StyledBadge = styled.div<IBadgeProps>`
 	${(props) =>
 		`
         display: inline-flex;
@@ -53,11 +54,11 @@ export const Badge: React.FC<IBadgeProps> = ({
 	text = "Топ цена",
 }) => {
 	return (
-		<StyledDiv color={color}>
+		<StyledBadge color={color}>
 			{text}
 			{iconAfter ? (
 				<Icon iconName={iconAfter} size={12}/>
 			) : null}
-		</StyledDiv>
+		</StyledBadge>
 	);
 };
